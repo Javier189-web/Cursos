@@ -36,7 +36,7 @@
                     <div class="flex items-center">
                         <div class="flex-shrink-0 h-10 w-10">
                             @isset($course->image)
-                                <img class="h-10 w-10 rounded-full object-cover object-center" src="{{Storage::url($course->image->url)}}" alt="">
+                                <img class="h-10 w-10 rounded-full object-cover object-center" src="{{ asset('/storage/'.$course->image->url)}}" alt="">
                             @else    
                                 <img class="h-10 w-10 rounded-full object-cover object-center" src="https://images.pexels.com/photos/6368912/pexels-photo-6368912.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                             @endisset

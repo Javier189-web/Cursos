@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Coders Free')
+@section('title', 'CURSOS FITEC')
 
 @section('content_header')
     <a href="{{route('admin.levels.create')}}" class="btn btn-secondary float-right">Crear nivel</a>

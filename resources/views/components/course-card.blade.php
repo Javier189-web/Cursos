@@ -1,7 +1,7 @@
 @props(['curso'])
 
 <article class="card flex flex-col">
-    <img class="h-36 w-full object-cover" src="{{Storage::url($curso->image->url)}}" alt="">
+    <img class="h-36 w-full object-cover" src="{{ asset('/storage/'.$curso->image->url)}}" alt="">
     <div class="card-body flex-1 flex flex-col">
          <h1 class="card-title">{{Str::limit($curso->title, 40)}}</h1>
          <p class="text-gray-500 text-sm mb-2 mt-auto">Prof: {{$curso->teacher->name}}</p>

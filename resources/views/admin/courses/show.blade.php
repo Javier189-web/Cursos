@@ -3,7 +3,7 @@
         <div class="container grid grid-cols-1 lg:grid-cols-2 gap-6"> 
             <figure>
                 @if ($course->image)
-                    <img class=" h-70 w-full object-cover rounded-lg " src="{{Storage::url($course->image->url)}}" alt="">
+                    <img class=" h-70 w-full object-cover rounded-lg " src="{{ asset('/storage/'.$course->image->url)}}" alt="">
                 @else
                     <img class=" h-80 w-full object-cover rounded-lg" src="https://images.pexels.com/photos/6368912/pexels-photo-6368912.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
                 @endif
@@ -119,7 +119,7 @@
 
                     <form class="mt-4" action="{{route('admin.courses.approved',$course)}}" method="post">
                         @csrf
-                        <button type="submit" class="btn btn-danger w-full ">Aprovar curso</button>
+                        <button type="submit" class="btn btn-danger w-full ">Aprobar curso</button>
                     </form>
                 </div>
             </section>

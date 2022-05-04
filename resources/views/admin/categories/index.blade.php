@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Coders Free')
+@section('title', 'CURSOS FITEC')
 
 @section('content_header')
     <a href="{{route('admin.categories.create')}}" class="btn btn-secondary btn-sm float-right">Crear nueva categoria</a>

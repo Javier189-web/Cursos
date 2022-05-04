@@ -1,6 +1,6 @@
 @extends('adminlte::page')
 
-@section('title', 'Coders Free')
+@section('title', 'CURSOS FITEC')
 
 @section('content_header')
     <h1>Lista de usuarios</h1>

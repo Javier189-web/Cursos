@@ -1,8 +1,13 @@
 <x-app-layout>
     <section class="bg-gray-700 py-12 mb-10">
         <div class="container grid grid-cols-1 lg:grid-cols-2 gap-6"> 
+            
             <figure>
-                <img class=" w-full object-cover rounded-lg" src="{{Storage::url($course->image->url)}}" alt="">
+                @isset($course->image)
+                <img id="picture" class="w-full h-70 object-cover object-center" src="{{ asset('/storage/'.$course->image->url)}}" alt="">
+            @else
+                <img id="picture" class="w-full h-64 object-cover object-center" src="https://images.pexels.com/photos/6368912/pexels-photo-6368912.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+            @endisset
             </figure>
 
             <div class="text-white">
@@ -123,7 +128,7 @@
             <aside class="hidden lg:block">
                 @foreach ($similares as $similar)
                     <article class="flex mb-6">
-                        <img class="h-32 w-40 object-cover rounded-sm" src="{{Storage::url($similar->image->url)}}" alt="">
+                        <img class="h-32 w-40 object-cover rounded-sm" src="{{ asset('/storage/'.$similar->image->url)}}" alt="">
                         <div class="ml-3">
                             <h1>
                                 <a class="font-bold text-cool-gray-500 mb-3"href="{{route('courses.show', $similar)}}">{{Str::limit($similar->title, 40)}}</a>
