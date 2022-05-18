@@ -42,7 +42,7 @@
                             </div>
 
                             <div>
-                                {!! Form::label('level_id', 'Niveles:') !!}
+                                {!! Form::label('level_id', 'Grados académico:') !!}
                                 {!! Form::select('level_id', $niveles, null, ['class' => 'form-input block  w-full mt-2']) !!}
                             </div>
 

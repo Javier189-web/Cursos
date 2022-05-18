@@ -35,8 +35,16 @@
             <p class="my-2 text-gray-500 font-bold">US$ {{$curso->price->value}}</p>
          @endif 
 
-         <a href="{{route('courses.show', $curso)}}" class="btn-block btn btn-primary">
-             Mas informacion
-         </a>
+         @can('enrolled', $curso)
+            <a href="{{route('courses.show', $curso)}}" class="btn-block btn btn-primary">
+                Continuar con el curso
+            </a>
+         @else
+            <a href="{{route('courses.show', $curso)}}" class="btn-block btn btn-primary">
+                Mas informacion
+            </a>
+        @endcan
+
+        
     </div>
  </article>

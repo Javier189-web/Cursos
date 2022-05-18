@@ -13,7 +13,7 @@
             <div class="text-white">
                 <h1 class="text-4xl">{{$course->title}}</h1>
                 <h2 class="text-xl mb-3">{{$course->subtitle}}</h2>
-                <p class="mb-2"><i class="fas fa-chart-line"></i> Nivel: {{$course->level->name}}</p>
+                <p class="mb-2"><i class="fas fa-chart-line"></i> Grado académico: {{$course->level->name}}</p>
                 <p class="mb-2"><i class=""></i> Categoria: {{$course->category->name}}</p>
                 <p class="mb-2"><i class="fas fa-user"></i> Inscritos: {{$course->students_count}}</p>
                 <p class="mb-2"><i class="far fa-star"></i> Calificacion: {{$course->rating}}</p>

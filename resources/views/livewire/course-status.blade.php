@@ -1,9 +1,11 @@
 <div class="mt-8">
    <div class="container grid grid-cols-1 lg:grid-cols-3 gap-8">
         <div class=" lg:col-span-2">
+
             <div class="embed-responsive">
                 {!!$current->iframe!!}
             </div>
+            
             <h1 class="text-3xl text-cool-gray-600 font-bold mt-4"> {{$current->name}} </h1>
             @if ($current->description)
                 <div class="text-gray-600 ">
@@ -70,7 +72,7 @@
                         <li class="text-gray-600 mb-5">
                             <a class="font-bold text-base inline-block mb-2" href="">{{$section->name}}</a>
                             <ul>
-                                @foreach ($course->lessons as $lesson)
+                                @foreach ($section->lessons as $lesson)
                                     <li class="flex">
                                         <div>
                                             @if ($lesson->completed)
@@ -84,7 +86,7 @@
 
                                             @else
 
-                                                @if ($current ->id == $lesson->id)
+                                                @if ($current->id == $lesson->id)
                                                     <span class="inline-block w-4 h-4 border-2 border-gray-500 rounded-full mr-2 mt-1"></span>
                                                 @else
                                                     <span class="inline-block w-4 h-4 bg-gray-500 rounded-full mr-2 mt-1"></span>

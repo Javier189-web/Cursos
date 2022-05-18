@@ -46,7 +46,7 @@
                         <button class="flex justify-center px-4 py-2 h-12 text-sm font-medium leading-5 text-gray-800 transition duration-150 ease-in-out bg-white border border-gray-300 rounded-lg hover:text-gray-700 focus:outline-none focus:border-blue-300 focus:shadow-outline-blue active:bg-gray-50 active:text-gray-800" 
                              type="button" aria-haspopup="true" aria-expanded="true" aria-controls="headlessui-menu-items-117" x-on:click="open = !open">
                              <i class="fas fa-layer-group mr-2 mt-2"></i>
-                            <span class="mt-1.5">Nivel</span>
+                            <span class="mt-1.5">Grado académico:</span>
                             <svg class="w-5 h-5 ml-2 -mr-1 mt-1.5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
                         </button>
                             </span>
